@@ -202,4 +202,27 @@ body footer p {
   color: #eeeff4;
   text-align: center;
   padding: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+  body .banner {
+    height: 400px;
+  }
+  body .banner .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 60px;
+  }
+  body .services .card {
+    flex-direction: column;
+    width: 50%;
+  }
+  body .services .card .description {
+    align-items: center;
+  }
+  body .services .card:nth-child(odd) .image {
+    order: initial;
+  }
 }/*# sourceMappingURL=services.css.map */

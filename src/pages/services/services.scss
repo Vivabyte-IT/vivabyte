@@ -1,0 +1,258 @@
+$dark-blue: #102d58;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-color: white;
+	height: 100vh;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #102d58;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: hsl(216, 69%, 30%);
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background: hsl(216, 69%, 40%);
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	header {
+		height: 87px;
+		background-color: $dark-blue;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 85px;
+
+		.logo {
+			display: flex;
+			align-items: center;
+			font-size: 25px;
+			color: white;
+			gap: 10px;
+			img {
+				width: 20px;
+			}
+		}
+
+		nav {
+			ul {
+				display: flex;
+				gap: 19px;
+				list-style: none;
+			}
+		}
+	}
+
+	.banner {
+		position: relative;
+		width: 100%;
+		height: 661px;
+		background-image: url(../../assets/services/banner.svg);
+		.filter {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(16, 45, 88, 0.5);
+		}
+		.text {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding-left: 15%;
+			padding-top: 135px;
+			color: white;
+			h1 {
+				font-weight: bold;
+				font-size: 45px;
+				span {
+					color: $dark-blue;
+					text-shadow: 0px 0px 5px #b5e3f5;
+				}
+			}
+		}
+	}
+
+	.services {
+		padding: 150px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h1 {
+			font-size: 45px;
+			color: $dark-blue;
+			font-weight: bold;
+			margin-bottom: 150px;
+		}
+
+		.card {
+			width: 70%;
+			display: flex;
+			gap: 80px;
+			align-items: center;
+			margin-bottom: 130px;
+			&:nth-child(odd) {
+				.image {
+					order: 1;
+				}
+			}
+			.image {
+				position: relative;
+				img {
+					height: 400px;
+				}
+				span {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					color: #fff;
+					font-size: 30px;
+					width: 100%;
+					text-align: center;
+					transform: translate(-50%, -50%);
+				}
+			}
+
+			.description {
+				display: flex;
+				flex-direction: column;
+				gap: 45px;
+				button {
+					border: none;
+					background-color: $dark-blue;
+					color: #fff;
+					font-size: 16px;
+					padding: 10px 30px;
+					cursor: pointer;
+					max-width: 150px;
+				}
+			}
+		}
+	}
+
+	footer {
+		background-color: $dark-blue;
+		position: static;
+		bottom: 0;
+		height: 626px;
+		width: 100%;
+		padding-top: 71px;
+		display: flex;
+		flex-direction: column;
+		hr {
+			border-color: rgba(238, 239, 244, 0.1);
+		}
+
+		.content {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 85px;
+			flex: 1;
+			.logo {
+				display: flex;
+				padding-top: 20px;
+				font-size: 40px;
+				color: white;
+				gap: 10px;
+				img {
+					width: 40px;
+					height: fit-content;
+				}
+			}
+
+			.links {
+				display: flex;
+				color: #eeeff4;
+				gap: 50px;
+				ul {
+					list-style: none;
+					padding-top: 20px;
+					li {
+						margin-bottom: 40px;
+						a {
+							opacity: 0.6;
+						}
+					}
+				}
+			}
+		}
+
+		.social-media {
+			width: 100%;
+			border: 1px solid rgba(238, 239, 244, 0.1);
+			border-left: none;
+			border-right: none;
+			height: 90px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 85px;
+			.media {
+				display: flex;
+				gap: 20px;
+				img {
+					width: 20px;
+				}
+			}
+
+			.terms {
+				opacity: 0.6;
+				display: flex;
+				gap: 30px;
+			}
+		}
+
+		p {
+			color: #eeeff4;
+			text-align: center;
+			padding: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1400px) {
+	body {
+		.banner {
+			height: 400px;
+			.text {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding-left: 0;
+				padding-top: 60px;
+			}
+		}
+		.services {
+			.card {
+				flex-direction: column;
+				width: 50%;
+
+				.description {
+					align-items: center;
+				}
+				&:nth-child(odd) {
+					.image {
+						order: initial;
+					}
+				}
+			}
+		}
+	}
+}

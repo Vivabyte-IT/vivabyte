@@ -7,6 +7,10 @@ $dark-blue: #102d58;
 	font-family: "Poppins", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: white;
 	height: 100vh;

@@ -45,21 +45,21 @@
           <div class="col">
             <div class="form-field">
               <label for="nome">Nome</label>
-              <input type="text" id="nome" name="nome">
+              <input type="text" id="nome" name="nome" tabindex="1">
             </div>
             <div class="form-field">
               <label for="email">Email</label>
-              <input type="text" id="email" name="email">
+              <input type="text" id="email" name="email" tabindex="3">
             </div>
           </div>
           <div class="col">
             <div class="form-field">
               <label for="sobrenome">Sobrenome</label>
-              <input type="text" id="sobrenome" name="sobrenome">
+              <input type="text" id="sobrenome" name="sobrenome" tabindex="2">
             </div>
             <div class="form-field">
               <label for="telefone">Telefone</label>
-              <input type="text" id="telefone" name="telefone">
+              <input type="text" id="telefone" name="telefone" tabindex="4">
             </div>
           </div>
         </div>
@@ -69,27 +69,27 @@
             <div class="radio-group">
               <div class="radio-field">
                 <!-- Consultoria Personalizad -->
-                <input type="radio" id="consultoria-personalizada" name="interesse" value="consultoria-personalizada">
+                <input type="radio" id="consultoria-personalizada" name="interesse" value="Consultoria Personalizada" tabindex="5">
                 <label for="consultoria-personalizada">Consultoria Personalizada</label>
               </div>
               <div class="radio-field">
                 <!-- Jira Software -->
-                <input type="radio" id="jira" name="interesse" value="jira">
+                <input type="radio" id="jira" name="interesse" value="Jira Software" tabindex="6">
                 <label for="jira">Jira Software</label>
               </div>
               <div class="radio-field">
                 <!-- Desenvolvimento de Software -->
-                <input type="radio" id="desenvolvimento" name="interesse" value="desenvolvimento">
+                <input type="radio" id="desenvolvimento" name="interesse" value="Desenvolvimento de Software" tabindex="7">
                 <label for="desenvolvimento">Desenvolvimento de Software</label>
               </div>
               <div class="radio-field">
                 <!-- Rede e infraestrutura -->
-                <input type="radio" id="rede" name="interesse" value="rede">
+                <input type="radio" id="rede" name="interesse" value="Rede e infraestrutura" tabindex="8">
                 <label for="rede">Rede e infraestrutura</label>
               </div>
               <div class="radio-field">
                 <!-- consultoria -->
-                <input type="radio" id="consultoria" name="interesse" value="consultoria">
+                <input type="radio" id="consultoria" name="interesse" value="Consultoria" tabindex="9">
                 <label for="consultoria">Consultoria</label>
               </div>
             </div>
@@ -98,11 +98,11 @@
         <div class="row">
           <div class="form-field">
             <label for="mensagem">Mensagem</label>
-            <input type="text" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem...">
+            <input type="text" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." tabindex="10">
           </div>
         </div>
         <div class="actions">
-          <button type="submit">Enviar</button>
+          <button type="submit" tabindex="11">Enviar</button>
         </div>
       </form>
     </div>
@@ -159,7 +159,8 @@
     </div>
     <p>© 2024 VivaByte. Todos os direitos reservados.</p>
   </footer>
-  <script src="./scripts/contato.js"></script>
+  <!-- <script type="module" src="../../config.js"></script> -->
+  <script type="module" src="./scripts/contato.js"></script>
 </body>
 
 </html>

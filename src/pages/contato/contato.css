@@ -192,6 +192,11 @@ body main .container form .actions button {
   color: white;
   font-size: 16px;
   padding: 15px 48px;
+  cursor: pointer;
+}
+body main .container form .actions button:focus, body main .container form .actions button:hover {
+  background-color: #102D58;
+  outline-color: #b5e3f5;
 }
 body footer {
   background-color: #102d58;
